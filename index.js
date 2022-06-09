@@ -1,12 +1,12 @@
 const Vcoy = {
-    FirstName: 'Vitya',
-    LastName: 'Coy',
-    Gender: 'Male',
-    Age: 28,
-    HP:null,
-    Location:undefined,
-    BloodGroup:'На рукаве',
-    IsAlive: true
+    firstName: 'Vitya',
+    lastName: 'Coy',
+    gender: 'Male',
+    age: 28,
+    hp:null,
+    location:undefined,
+    bloodGroup:'На рукаве',
+    isAlive: true
 };
 
 console.log(Vcoy.IsAlive);
