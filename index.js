@@ -27,6 +27,6 @@ if (timesOfDay=="утро" & wife==true){
     }else if (timesOfDay=="день"){
         result="Потрень и пообедай";
     } else if (timesOfDay=="вечер"){
-        result="Отдохни";
+        result="Поужинай и отдохни";
     } else result="Спи!";
 console.log(result);
