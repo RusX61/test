@@ -1,19 +1,32 @@
-function sum(a,b){
-    let result = a+b;
-    console.log(result);
-}
-sum(4,66);
+//Сравнения
+const comparisonInt = 5>4;
+console.log(comparisonInt);
 
-function x(a,b) {
-    return a * b;
-}
-const result = x(9,7);
+const comparisonStr = "2" > "12";
+console.log(comparisonStr);
+
+const comparisonUndefinedNull = undefined == null;
+console.log(comparisonUndefinedNull);
+
+const comparisonUndefinedNullBulean = undefined === null;
+console.log(comparisonUndefinedNullBulean);
+
+const comparisonNullStr = null == "\n0\n";
+console.log(comparisonNullStr);
+
+const comparisonNullStrBulean = null === +"\n0\n";
+console.log(comparisonNullStrBulean);
+
+//Условия
+let timesOfDay="ночь";
+let wife=true;
+if (timesOfDay=="утро" & wife==true){
+        result="Поебись и позавтракай";
+    }else if (timesOfDay=="утро" & wife==false){
+        result="Подрочи и позавтракай";
+    }else if (timesOfDay=="день"){
+        result="Потрень и пообедай";
+    } else if (timesOfDay=="вечер"){
+        result="Отдохни";
+    } else result="Спи!";
 console.log(result);
-
-function alrt(){
-    alert ('Сказано же было не нажимать,долбоеб!')
-}
-
-const button = document.querySelector('button');
-button.addEventListener ('click', alrt);
-button.addEventListener ('click', sum);
