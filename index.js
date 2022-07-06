@@ -1,6 +1,3 @@
-// const basicPercent = 15; //базовый процент
-// const borrowers = ["семейная ипотека","льготная ипотека","обычная","ипотека для IT-специалистов"]; //набор ипотек
-// const discounts = [8, 13, 5.5] //скидки
 
 // for(let i=0; i< borrowers.length; i+=1){
 //     if (i==0){
@@ -17,14 +14,21 @@
 // }
 
 
+// for(let i=0; i< borrowers.length; i+=1){
+//     if(i<3){
+//     totalPercent = basicPercent - discounts[i];
+//     console.log(borrowers[i] + ' : ' + totalPercent + '%');
+//     }else console.log(borrowers[i] + ' : ' + basicPercent + '%');
+// }
 
-const basicPercent = 15; //базовый процент
-const borrowers = ["семейная ипотека","льготная ипотека","ипотека для IT-специалистов","обычная"]; //набор ипотек
-const discounts = [8, 13, 5.5] //скидки
-
-for(let i=0; i< borrowers.length; i+=1){
-    if(i<3){
-    totalPercent = basicPercent - discounts[i];
-    console.log(borrowers[i] + ' : ' + totalPercent + '%');
-    }else console.log(borrowers[i] + ' : ' + basicPercent + '%');
+submitButton.onclick = function() {
+    let weight = document.getElementById("userWeight").value;
+    let height = document.getElementById('userHeight').value;
+    let age = document.getElementById('userAge').value;
+    let gender = document.querySelector('input[name = "gender"]:checked').value;
+    let result ;
+    if (gender = male){
+        result = (height - 100)*1.15;
+    } else result = (height - 110)*1.15;
+    alert(result);
 }
