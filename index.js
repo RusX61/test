@@ -4,10 +4,10 @@ submitButton.onclick = function() {
     let age = document.getElementById('userAge').value;
     let gender = document.querySelector('input[name = "gender"]:checked').value;
     let imt = weight/((height/100)**2);
-    let result;
+    
     if (gender == 'male') {
-        result = (height - 100);;
-    } else result = (height - 110);
+        result = (height - 100)*1.15;;
+    } else result = (height - 110)*1.15;
 
     if(age < 30){
         result=result-((result/100)*11);
@@ -15,5 +15,10 @@ submitButton.onclick = function() {
         result=result+((result/100)*6);
     }
 
-    alert(result + "Индекс Массы вашего тела =" + imt);
+    if(result>weight){
+        recomendation = 'Ваш вес меньше нормы,стоит набрать массу.';
+    } else recomendation = 'Ваш вес больше нормы,стоит сесть на диету и заняться спортом.'
+
+    alert("Индекс Массы вашего тела = " + imt + "\x0A" + 
+    'Ваш нормальный вес: '+ result + 'КГ' + '\x0A' + recomendation);
 }
