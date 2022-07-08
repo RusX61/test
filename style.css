@@ -1,52 +1,133 @@
 body {
     margin: 0;
-    padding-left: 40px;
+    background-image: url(https://oyia.net/wp-content/uploads/2011/12/bg1.jpg);
+    background-repeat:repeat-x;
     font-family: "Arial", sans-serif;
     font-size: 14px;
     line-height: 20px;
     color: #000000;
-  }
+}
+main{
+  padding-left: 40px;
+}
 
-  h1 {
-    width: 1255px;
-    margin: 0 auto 1px;
-    font-family: "Georgia", serif;
-    text-align: center;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 64px;
-  }
+header{
+  background-image: url(https://running-portugal.com/lisbon/lisbonhalf/pt/images/header_background_origine.jpg);
+  background-size:contain;
+  background-position: center;
+  
+  
+}
 
-  h2 {
-    width: 1255px;
-    margin: 0 auto 1px;
-    font-family: "Georgia", serif;
-    text-align: center;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 64px;
-  }
+h1 {
+  position: center;
+  transform: translate(-3%, 0);
+  margin: 0 auto 1px;
+  font-family: "Georgia", serif;
+  text-align: center;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 64px;
+}
 
-  h3 {
-    width: 1255px;
-    margin: 0 auto 1px;
-    font-family: "Georgia", serif;
-    text-align: center;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 64px;
-  }
+nav {
+  padding-left: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  img {
-    display: block;
-    margin: 0 auto;
-  }
+nav a{
+  float: center;
+  line-height: 50px;
+  font-size: 15px;
+  background: rgb(150, 214, 240);
+  color: rgb(0, 0, 0);
+  margin-top: 50px;
+  margin-right: 57px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center; 
+} 
 
-  .calculate {
-    font-size: 30px;
-  }
+h2 {
+  margin: 0 auto 1px;
+  font-family: "Georgia", serif;
+  text-align: center;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 64px;
+  position: center;
+  transform: translate(-6%, 0);
+}
 
-  .bottom {
-    display: inline-block;
-    text-align: center;
-  }
+h3 {
+  margin: 0 auto 1px;
+  font-family: "Georgia", serif;
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 64px;
+  position: right;
+  transform: translate(20%, 0);
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+.calculate {
+  font-size: 30px;
+}
+
+.bottom {
+  display: inline-block;
+  text-align: center;
+}
+
+.inputform{
+  display: inline-block;
+  line-height: 30px;
+  font-size: 18px;
+  background: rgb(150, 214, 240);
+  color: rgb(0, 0, 0);
+  margin-top: 50px;
+  margin-right: 57px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center; 
+}
+
+#submitButton {
+  position: relative;
+  left: 37%;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #1ea6f4;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+  width: 150px;
+  margin: 5px;
+}
+  
+#height img{
+  float: right;
+  width:480px; 
+  height:350px;
+  border:3px solid #CCC;
+}
+  
+#old img{
+  border:3px solid #CCC;
+  float: right; 
+  padding-left: 10px; 
+  padding-bottom: 10px;
+  width: 40%;
+  height: 30%;
+}
+
+#index{
+padding-top: 200px;
+}
