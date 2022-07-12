@@ -1,6 +1,6 @@
 body {
     margin: 10px;
-    background-image: url(https://oyia.net/wp-content/uploads/2011/12/bg1.jpg);
+    background-image: url(img/bg1.jpg);
     background-repeat:repeat-x;
     font-family: "Arial", sans-serif;
     font-size: 14px;
@@ -12,7 +12,7 @@ main{
 }
 
 header{
-  background-image: url(https://running-portugal.com/lisbon/lisbonhalf/pt/images/header_background_origine.jpg);
+  background-image: url(img/header_background.jpg);
   background-size:contain;
   color: #ffffff;
   background-position: center;
