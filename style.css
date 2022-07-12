@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 10px;
     background-image: url(https://oyia.net/wp-content/uploads/2011/12/bg1.jpg);
     background-repeat:repeat-x;
     font-family: "Arial", sans-serif;
@@ -14,15 +14,16 @@ main{
 header{
   background-image: url(https://running-portugal.com/lisbon/lisbonhalf/pt/images/header_background_origine.jpg);
   background-size:contain;
+  color: #ffffff;
   background-position: center;
-  
-  
+  border-radius: 10px;  
 }
 
 h1 {
   position: center;
   transform: translate(-3%, 0);
   margin: 0 auto 1px;
+  text-shadow: 1px 1px 1px #000;
   font-family: "Georgia", serif;
   text-align: center;
   font-weight: normal;
@@ -67,7 +68,7 @@ h3 {
   font-weight: normal;
   font-size: 20px;
   line-height: 64px;
-  position: right;
+  position: center;
   transform: translate(20%, 0);
 }
 
@@ -80,11 +81,6 @@ img {
   font-size: 30px;
 }
 
-.bottom {
-  display: inline-block;
-  text-align: center;
-}
-
 .inputform{
   display: inline-block;
   line-height: 30px;
@@ -92,7 +88,7 @@ img {
   background: rgb(150, 214, 240);
   color: rgb(0, 0, 0);
   margin-top: 50px;
-  margin-right: 57px;
+  margin-right: 50px;
   padding: 10px;
   border-radius: 10px;
   text-align: center; 
@@ -120,14 +116,53 @@ img {
 }
   
 #old img{
+  float: right;
+  margin: 7px 7px 7px 0;
+  width:40%;
   border:3px solid #CCC;
-  float: right; 
-  padding-left: 10px; 
-  padding-bottom: 10px;
-  width: 40%;
-  height: 30%;
 }
 
-#index{
-padding-top: 200px;
+#old p{
+width: 50%;
+}
+
+#sign{
+  float: right;
+}
+
+#imtable{
+  float: right;
+  margin: 7px 7px 7px 0;
+  width:40%;
+  border:3px solid #CCC;
+}
+/* footer{
+ 
+
+} */
+
+footer{
+  background-color: #616161;
+  background-position: center;
+  border-radius: 10px; 
+}
+
+footer p{
+  text-align: right;
+  padding-right: 10px;
+  color: #FFFFFF;
+}
+
+#up{
+  position: relative;
+  left: 45%;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #003d61;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  width: 80px;
+  margin: 5px;
 }
