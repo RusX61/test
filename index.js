@@ -23,19 +23,26 @@ submitButton.onclick = function() {
     'Ваш нормальный вес: '+ result + 'КГ' + '\x0A' + recomendation);
 }
 
-var img = document.querySelectorAll('.click'),
-  backPop = document.getElementById('backPop'),
-    popUp = document.getElementById('popUp'),
-    bigImg= document.getElementById('bigImg');
-[].forEach.call(img, function(elem) {
-  var src = elem.getAttribute('src');
-  elem.onclick = function() { 
-    bigImg.setAttribute('src',src);
-    backPop.style.display = "block";
+function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
   }
-});
-backPop.onclick = function(elem){
-  if(!(elem.target.closest("#popUp"))){
-      backPop.style.display = 'none';
-     }    
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
 }
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
