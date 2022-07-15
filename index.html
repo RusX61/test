@@ -10,36 +10,56 @@
 
   <body>
     <header>
-     
+     <h1>Заполните анкету</h1>
     </header>
 
     <main>
     <form action="#" method="post">
-      <p>Имя: <input autofocus
-        type="text"></p>
-        <p>Фамилия: <input
-          type="text"></p>
-          <p>Отчество: <input
-            type="text"></p>
-      <p>Дата рождения: <input type="date"></p>
-      <p>Email: <input type="email" name="email" placeholder="yourName@sutulaya.com"></p>
-      <p>Документы: <input type="checkbox" name="passport" >
+      <label for="fName">Имя: </label>
+      <input autofocus type="text" name="fName" required><br>
+
+      <label for="lName">Фамилия: </label>
+      <input type="text" name="lName" required><br>
+
+      <label for="mName">Отчество: </label>
+      <input type="text" name="mName"><br>
+
+      <label for="date">Дата рождения: </label>
+      <input type="date" name="date" required><br>
+
+      <label for="email">Email: </label>
+      <input type="email" name="email" placeholder="yourName@sutulaya.com"><br>
+
+      <label for="phone"> Телефон: </label>
+      <input type="number" name="phone" required maxlength="12" minlength="11" placeholder="+79112223344"><br>
+
+      <section>Документы: <input type="checkbox" name="passport" >
         <label for="passport">Паспорт</label>
         <input type="checkbox" name="driveid" >
         <label for="driveid">Права</label>
         <input type="checkbox" name="taxid" >
-        <label for="taxid">ИНН</label></p>
+        <label for="taxid">ИНН</label>
+      </section>
         
-      <p>Город проживания: <select name="city" >
-        <option value="sochi">Сочи</option>
-        <option selected value="moscow">Москва</option>
-        <option value="spb">Питер</option>
-        <option value="ekb">Ебург</option>
-        <option value="taganrog">Таганрог</option>
-      </select></p>
-      <p>Дополнительная информация о себе:<br><textarea name="comment" cols="30" rows="10"></textarea></p>
-      <p><input type="submit" value="Отправить">
-        <input type="reset" value="Очистить"></p>
+      <section>Город проживания: 
+        <select name="city" required>
+          <option value="sochi">Сочи</option>
+          <option selected value="moscow">Москва</option>
+          <option value="spb">Питер</option>
+          <option value="ekb">Ебург</option>
+          <option value="taganrog">Таганрог</option>
+        </select>
+      </section>
+
+      <label for="comment">Дополнительная информация о себе:<br>
+        <textarea name="comment" cols="30" rows="10" maxlength="140" 
+        placeholder="Максимальная длина сообщения 140 символов"></textarea>
+      </label>
+
+      <section>
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Очистить">
+      </section>
     </form> 
     </main>
 <footer>
