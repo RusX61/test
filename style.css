@@ -1,9 +1,69 @@
+
+body{
+  background-image: url(../test/img/wood.png);
+  background-size: cover;
+}
 h1{
+  color: antiquewhite;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
+  
+}
+
+.symbols{
+  color: antiquewhite;
+  position: absolute;
+  width: 800px;
+  font-size: 30px;
+  transform: scale(1, -1);
+  margin-top: -45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.numbers{
+  color: antiquewhite;
+  position: absolute;
+  height: 800px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: -5%;
+}
+
+.symbolsVs{
+  color: antiquewhite;
+  position:absolute;
+  width: 800px;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 102%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.numbersVs{
+  color: antiquewhite;
+  position: absolute;
+  transform: scale(1, -1);
+  height: 800px;
+  font-size: 30px;
+  margin-left: 103%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  
 }
 
 .board{
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -11,21 +71,27 @@ h1{
   margin-right: auto;
   width: 800px;
   height: 800px;
-  border: solid 2px black;
- 
+  border: solid 10px rgb(44, 44, 44);
+  border-radius: 10px;
+  box-shadow: 10px; 
 }
 
 .white,.black{
   width: 100px;
   height: 100px;
-  background-color: rgb(255, 189, 66);
+  background-image: url(../test/img/whiteWood.jpg);
+
 }
 
 .black{
-  background-color: black;
+  background-image: url(../test/img/BlackWood.jpg);
 }
 
 .doubleRow{
   display: flex;
   flex-direction: column-reverse;
+}
+
+footer{
+  float: right;
 }
